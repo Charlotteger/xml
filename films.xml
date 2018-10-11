@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--<!DOCTYPE films SYSTEM "films.dtd"> -->
+<!--               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="films.xsd"           à rajouter dans <films> pour le schema xsd
+-->
+<?xml-stylesheet href="films.xsl" type="text/xsl" ?>
+<films xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="films.xsd"   >
+    <film sortie="2005" visa="442139">
+        <titre>King Kong</titre>
+        <realisateur>Tim Burton</realisateur>
+        <exploitation>
+            <dateSortie>2005-12-14</dateSortie>
+            <nbEntrees> 2838759</nbEntrees>
+            <nbSalles>547</nbSalles>
+            <pays>
+                <nom>Allemagne</nom>
+                <nom>Espagne</nom>
+                <nom>Italie</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="1">Peter Jackson</acteur>
+            <acteur ref="2">Naomie Watts</acteur> 
+            <acteur ref="3">Jack Black</acteur>
+            <acteur ref="13">Kad Merad</acteur>
+        </acteurs>
+        <duree>
+            <heures>3</heures>
+            <minutes>8</minutes>
+        </duree>
+        <scenario>
+            <keyword>New York</keyword>, <ev>1933</ev>. Artiste de music-hall à la rue, <personnage>Ann Darrow</personnage> rencontre l'audacieux explorat-
+             eur/réalisateur <personnage>Carl Denham</personnage>. <keyword>Ce dernier rêve de terminer son ?lm inachevé,</keyword> <ev>mais nourrit surtout la
+                 folle ambition d'être le premier à découvrir le secret de la mystérieuse Skull Island</ev>. Il va entraîner
+Ann dans sa périlleuse aventure...
+        </scenario>
+        <image ref="kadmerad.jpg"/>
+        
+    </film>
+    
+    <film sortie="2004" visa="134089">
+        <titre>Booba</titre>
+        <realisateur>Tim Norton</realisateur>
+        <exploitation>
+            <dateSortie>2004-11-10</dateSortie>
+            <nbEntrees>3838759</nbEntrees>
+            <nbSalles>650</nbSalles>
+             <pays>
+                <nom>Allemagne</nom>
+             </pays>
+        </exploitation>
+        <acteurs>     
+            <acteur ref="4">Adrien Body</acteur>
+            <acteur ref="5">The rock</acteur>
+            <acteur ref="6">Leonardo DiCaprio</acteur>     
+        </acteurs>
+        <duree>
+            <heures>2</heures>
+            <minutes>50</minutes>
+        </duree>
+        <scenario>
+             Le petit ourson
+        </scenario>     
+        <image ref="kadmerad.jpg"/>
+    </film>
+    
+     <film sortie="2010" visa="126718">
+        <titre>Inception</titre>
+        <realisateur>Tom Norton</realisateur>        
+        <exploitation>
+            <dateSortie>2010-07-21</dateSortie>
+            <nbEntrees>4900206</nbEntrees>
+            <nbSalles>700</nbSalles>
+            <pays>
+                <nom>Belgique</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="7">Marion Cotillard</acteur>
+        </acteurs>
+        <duree>
+            <heures>2</heures>
+            <minutes>28</minutes>
+        </duree>
+        <scenario>
+             Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l’art périlleux de l’extraction : sa spécialité consiste à s’approprier les secrets les plus précieux d’un individu, enfouis au plus profond de son subconscient, pendant qu’il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l’univers trouble de l’espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier qui a perdu tout ce qui lui est cher. Mais une ultime mission pourrait lui permettre de retrouver sa vie d’avant – à condition qu’il puisse accomplir l’impossible : l’inception. Au lieu de subtiliser un rêve, Cobb et son équipe doivent faire l’inverse : implanter une idée dans l’esprit d’un individu. S’ils y parviennent, il pourrait s’agir du crime parfait. Et pourtant, aussi méthodiques et doués soient-ils, rien n’aurait pu préparer Cobb et ses partenaires à un ennemi redoutable qui semble avoir systématiquement un coup d’avance sur eux. Un ennemi dont seul Cobb aurait pu soupçonner l’existence. 
+        </scenario>
+        <image ref="kadmerad.jpg"/>
+    </film>
+    
+    <film sortie="1999" visa="98226">
+        <titre>Fight Club</titre>
+        <realisateur>Ethan Kenway</realisateur>
+        <exploitation>
+            <dateSortie>1999-11-10</dateSortie>
+            <nbEntrees>5900206</nbEntrees>
+            <nbSalles>800</nbSalles>
+            <pays>
+                <nom>Pays-Bas</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="8">Ellen Page</acteur>
+        </acteurs>
+        <duree>
+            <heures>2</heures>
+            <minutes>19</minutes>
+        </duree>
+        <scenario>
+            Le narrateur, sans identité précise, vit seul, travaille seul, dort seul, mange seul ses plateaux-repas pour une personne comme beaucoup d'autres personnes seules qui connaissent la misère humaine, morale et sexuelle. C'est pourquoi il va devenir membre du Fight club, un lieu clandestin ou il va pouvoir retrouver sa virilité, l'échange et la communication. Ce club est dirigé par Tyler Durden, une sorte d'anarchiste entre gourou et philosophe qui prêche l'amour de son prochain.  
+        </scenario>
+        <image ref="kadmerad.jpg"/>
+    </film>
+    
+    <film sortie="1909" visa="98326">
+        <titre>13 hommes en colère</titre>
+        <realisateur>Altair lbn</realisateur>
+        <exploitation>
+            <dateSortie>1921-11-10</dateSortie>
+            <nbEntrees>2900206</nbEntrees>
+            <nbSalles>600</nbSalles>
+            <pays>
+                <nom>Estonie</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="9">Brad Pitt</acteur>
+        </acteurs>
+        <duree>
+            <heures>1</heures>
+            <minutes>10</minutes>
+        </duree>
+        <scenario>
+            12 c'est difficile mais alors 13...
+        </scenario>
+        <image ref="kadmerad.jpg"/>
+    </film>
+    
+    <film sortie="2015" visa="99326">
+        <titre>le roi sans couronne</titre>
+        <realisateur>Ezio Auditore</realisateur>
+        <exploitation>
+            <dateSortie>2011-11-10</dateSortie>
+            <nbEntrees>2800206</nbEntrees>
+            <nbSalles>450</nbSalles>
+            <pays>
+                <nom>Estonie</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="10">Edward Norton</acteur>
+        </acteurs>
+        <duree>
+            <heures>2</heures>
+            <minutes>55</minutes>
+        </duree>
+        <scenario>
+            Une couronne pour le pouvoir.
+        </scenario>
+        <image ref="kadmerad.jpg"/>
+    </film>
+    
+    <film sortie="2016" visa="99389">
+        <titre>Une comédie française</titre>
+        <realisateur>Kad Merad</realisateur>
+        <exploitation>
+            <dateSortie>2009-11-10</dateSortie>
+            <nbEntrees>1800206</nbEntrees>
+            <nbSalles>500</nbSalles>
+            <pays>
+                <nom>Lettonie</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="11">Helena BonHam Carter</acteur>
+        </acteurs>
+        <duree>
+            <heures>2</heures>
+            <minutes>56</minutes>
+        </duree>
+        <scenario>
+            Encore avec Kad Merad
+        </scenario>
+        <image ref="kadmerad.jpg"/>
+    </film>
+    
+    <film sortie="2016" visa="995689">
+        <titre>les Marseillais chez les chtis</titre>
+        <realisateur>Jessica Kassaing</realisateur>
+        <exploitation>
+            <dateSortie>2017-11-10</dateSortie>
+            <nbEntrees>1000206</nbEntrees>
+            <nbSalles>200</nbSalles>
+            <pays>
+                <nom>Bulgarie</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="12">Peter Parker</acteur>
+            <acteur ref="13">Kad Merad</acteur>
+        </acteurs>
+        <duree>
+            <heures>2</heures>
+            <minutes>30</minutes>
+        </duree>
+        <scenario>
+            Encore et toujours avec Kad Merad
+        </scenario>
+        <image ref="kadmerad.jpg"/>
+    </film>
+    
+    <acteurDescription id="1">
+        <nomA>Jackson</nomA>
+        <prenom>Peter</prenom>
+        <dateNaissance lieu="Paris">1989-10-02</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="2">
+        <nomA>Watts</nomA>
+        <prenom>Naomie</prenom>
+        <dateNaissance lieu="Berlin">1988-01-20</dateNaissance>
+        <sexe>F</sexe>
+    </acteurDescription>
+    <acteurDescription id="3">
+        <nomA>Black</nomA>
+        <prenom>Jack</prenom>
+        <dateNaissance lieu="Tokyo">1967-12-02</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="4">
+        <nomA>Body</nomA>
+        <prenom>Adrian</prenom>
+        <dateNaissance lieu="Londres">1972-06-15</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="5">
+        <nomA>Johnson</nomA>
+        <prenom>Dwayne</prenom>
+        <dateNaissance lieu="Pekin">1977-10-22</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="6">
+        <nomA>DiCaprio</nomA>
+        <prenom>Leonardo</prenom>
+        <dateNaissance lieu="Washington">1980-10-23</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="7">
+        <nomA>Cotillard</nomA>
+        <prenom>Marion</prenom>
+        <dateNaissance lieu="Ottawa">1968-07-02</dateNaissance>
+        <sexe>F</sexe>
+    </acteurDescription>
+    <acteurDescription id="8">
+        <nomA>Page</nomA>
+        <prenom>Ellen</prenom>
+        <dateNaissance lieu="Madrid">1992-12-12</dateNaissance>
+        <sexe>F</sexe>
+    </acteurDescription>
+    <acteurDescription id="9">
+        <nomA>Pitt</nomA>
+        <prenom>Brad</prenom>
+        <dateNaissance lieu="Mexico">1970-02-15</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="10">
+        <nomA>Norton</nomA>
+        <prenom>Edward</prenom>
+        <dateNaissance lieu="Rio">1969-11-02</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="11">
+        <nomA>BonHam Carter</nomA>
+        <prenom>Elena</prenom>
+        <dateNaissance lieu="Rome">1968-03-16</dateNaissance>
+        <sexe>F</sexe>
+    </acteurDescription>
+    <acteurDescription id="12">
+        <nomA>Parker</nomA>
+        <prenom>Peter</prenom>
+        <dateNaissance lieu="Copenhague">1910-10-10</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+    <acteurDescription id="13">
+        <nomA>Merad</nomA>
+        <prenom>Kad</prenom>
+        <dateNaissance lieu="Moscou">1997-25-10</dateNaissance>
+        <sexe>M</sexe>
+    </acteurDescription>
+</films>

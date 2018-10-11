@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+    TODO define vocabulary identification data
+    PUBLIC ID  : -//vendor//vocabulary//EN
+    SYSTEM ID  : http://server/path/__NAME__
+-->
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!ELEMENT films (film*,acteurDescrition*)>
+<!ELEMENT film (titre,realisateur,exploitation,acteurs,duree,scenario,image)>
+    <!ATTLIST film sortie CDATA #REQUIRED   
+                         visa   CDATA #REQUIRED>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT realisateur (#PCDATA)>
+<!ELEMENT exploitation (dateSortie,nbEntrees,nbSalles,pays)>
+<!ELEMENT dateSortie (#PCDATA)>
+<!ELEMENT nbEntrees (#PCDATA)>
+<!ELEMENT nbSalles (#PCDATA)>
+<!ELEMENT pays (nom)+>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT acteurs (acteur)+>
+<!ELEMENT acteur (#PCDATA)>
+<!ATTLIST acteur
+    ref CDATA #REQUIRED
+>
+<!ELEMENT duree (heures,minutes)>
+<!ELEMENT heures (#PCDATA)>
+<!ELEMENT minutes (#PCDATA)>
+<!ELEMENT scenario (#PCDATA | keyword | ev | personnage)*>
+<!ELEMENT keyword (#PCDATA)>
+<!ELEMENT ev (#PCDATA)>
+<!ELEMENT personnage (#PCDATA)>
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+    ref CDATA #REQUIRED
+  >
+<!ELEMENT acteurDescrition (nomA,prenom,dateNaissance,sexe)>
+<!ATTLIST acteurDescrition 
+    id CDATA #REQUIRED
+>
+<!ELEMENT nomA (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT dateNaissance (#PCDATA)>
+<!ATTLIST dateNaissance
+    lieu CDATA #REQUIRED
+>
+<!ELEMENT sexe (#PCDATA)>

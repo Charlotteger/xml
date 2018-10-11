@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="films">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="film" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="titre"/>
+                            <xs:element type="xs:string" name="realisateur" minOccurs="0"/>
+                            <xs:element name="exploitation">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dateSortie" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:date">
+                                                    <xs:minInclusive value="1895-01-01"/>
+                                                    <xs:maxInclusive value="2019-01-01"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element type="xs:positiveInteger" name="nbEntrees"/>
+                                        <xs:element type="xs:positiveInteger" name="nbSalles"/>
+                                        <xs:element name="pays">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nom" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="Allemagne"/>
+                                                                <xs:enumeration value="Espagne"/>
+                                                                <xs:enumeration value="Belgique"/>
+                                                                <xs:enumeration value="Estonie"/>
+                                                                <xs:enumeration value="Italie"/>
+                                                                <xs:enumeration value="Bulgarie"/>
+                                                                <xs:enumeration value="Lettonie"/>
+                                                                <xs:enumeration value="Pays-Bas"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="acteurs">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="acteur" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:int" name="ref"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="duree">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="heures">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="23"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="minutes">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="59"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="scenario">
+                                <xs:complexType mixed="true">
+                                    <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                        <xs:element type="xs:string" name="keyword"/>
+                                        <xs:element type="xs:string" name="ev"/>
+                                        <xs:element type="xs:string" name="personnage" maxOccurs="unbounded" minOccurs="0"/>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="image">
+                                <xs:complexType>
+                                    <xs:attribute name="ref" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="sortie" type="xs:gYear"/>
+                        <xs:attribute type="xs:positiveInteger" name="visa"/>
+                    </xs:complexType>
+                </xs:element>
+        
+                <xs:element name="acteurDescription" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="nomA"/>
+                            <xs:element type="xs:string" name="prenom"/>
+                            <xs:element name="dateNaissance">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="xs:string" name="lieu"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="sexe"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:int" name="id"/>
+                    </xs:complexType>
+                </xs:element> 
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="idD">
+            <xs:selector xpath="acteurDescription" />
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:keyref name="refD" refer="idD">
+            <xs:selector xpath="films/film/acteurs/acteur" />
+            <xs:field xpath="@ref" />
+        </xs:keyref>
+    </xs:element>
+</xs:schema>
