@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 10 oct. 2018, 14:41:23
     Author     : CGERBER
 */
-.histoireStyle {
+.histoireStyle{
 text-align: justify;
 border-color: red;
 border-style: solid;
@@ -18,4 +18,36 @@ background-color:#BBBBBB;
     color: red;
     font-size: small;
 }
+
+#F{
+	color: pink;
+}
+
+#M{
+	color: blue;
+}
+
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.ev{
+	font-style: italic;
+}
+
+.keyword{
+	font-weight: bold;
+}
+
+.personnage{
+	text-decoration: underline;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
 

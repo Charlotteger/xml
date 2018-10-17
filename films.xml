@@ -8,7 +8,7 @@ and open the template in the editor.
 <!--               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="films.xsd"           à rajouter dans <films> pour le schema xsd
 -->
-<?xml-stylesheet href="films.xsl" type="text/xsl" ?>
+<?xml-stylesheet href="newfilm.xsl" type="text/xsl" ?>
 <films xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="films.xsd"   >
     <film sortie="2005" visa="442139">
@@ -36,7 +36,7 @@ xsi:noNamespaceSchemaLocation="films.xsd"   >
         </duree>
         <scenario>
             <keyword>New York</keyword>, <ev>1933</ev>. Artiste de music-hall à la rue, <personnage>Ann Darrow</personnage> rencontre l'audacieux explorat-
-             eur/réalisateur <personnage>Carl Denham</personnage>. <keyword>Ce dernier rêve de terminer son ?lm inachevé,</keyword> <ev>mais nourrit surtout la
+             eur/réalisateur <personnage>Carl Denham</personnage>. <keyword>Ce dernier rêve de terminer son but inachevé,</keyword> <ev>mais nourrit surtout la
                  folle ambition d'être le premier à découvrir le secret de la mystérieuse Skull Island</ev>. Il va entraîner
 Ann dans sa périlleuse aventure...
         </scenario>
